@@ -24,6 +24,7 @@ func PrintNbr(n int) {
 		z01.PrintRune('8')
 		z01.PrintRune('0')
 		z01.PrintRune('8')
+		return
 	}
 	if n > 10 {
 		PrintNbr(n / 10)
