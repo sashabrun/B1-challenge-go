@@ -44,6 +44,7 @@ func PrintNbrbis(n int) {
 	}
 	z01.PrintRune(rune((n % 10) + 48))
 }
+
 func fillZero(nb int, len int) {
 	cpt := 1
 	nombreCourrant := nb
