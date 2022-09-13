@@ -10,8 +10,8 @@ func Atoi(s string) int {
 			j = j*10 + (int(s[i]) - 48)
 		} else if (int(s[0]) == '+' && int(s[1]) == '+') || (int(s[0]) == '-' && int(s[1]) == '-') || (int(s[0]) == '+' && int(s[1]) == '-') || (int(s[0]) == '-' && int(s[1]) == '+') {
 			return 0
-		} else if int(s[i]) == 43 {
-		} else if int(s[i]) == 45 {
+		} else if int(s[0]) == 43 {
+		} else if int(s[0]) == 45 {
 		} else {
 			return 0
 		}
