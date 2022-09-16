@@ -2,6 +2,9 @@ package piscine
 
 func Index(s string, toFind string) int {
 	trouve := true
+	if len(toFind) == 0 {
+		return -1
+	}
 	for i := 0; i < len(s); i++ {
 		trouve = true
 		if s[i] == toFind[0] {
