@@ -12,9 +12,9 @@ func Index(s string, toFind string) int {
 				if s[i+x] != toFind[x] {
 					trouve = false
 				}
-				if trouve == true {
-					return i
-				}
+			}
+			if trouve == true {
+				return i
 			}
 		}
 	}
