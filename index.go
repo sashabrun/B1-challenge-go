@@ -1,20 +1,33 @@
 package piscine
 
 func Index(s string, toFind string) int {
-	trouve := true
-	if len(toFind) == 0 {
+	ind := 0
+	indf := 0
+	trouv := false
+	if toFind == "" {
 		return 0
 	}
-	for i := 0; i < len(s); i++ {
-		trouve = true
-		if s[i] == toFind[0] {
-			for x := 0; x < len(toFind); x++ {
-				if s[i+x] != toFind[x] {
-					trouve = false
+	if len(toFind) == 1 {
+		for i := 0; i < len(s); i++ {
+			if s[i] == toFind[0] {
+				return i
+			}
+		}
+	} else {
+		for i := 0; i < len(s); i++ {
+
+			if s[i] == toFind[0] {
+				if !trouv {
+					indf = i
 				}
 			}
-			if trouve == true {
-				return i
+			if s[i] == toFind[ind] {
+				ind++
+			} else {
+				trouv = false
+			}
+			if ind > 1 && s[i] == toFind[len(toFind)-1] {
+				return indf
 			}
 		}
 	}
