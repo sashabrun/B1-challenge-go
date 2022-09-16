@@ -19,6 +19,7 @@ func Index(s string, toFind string) int {
 			if s[i] == toFind[0] {
 				if !trouv {
 					indf = i
+					trouv = true
 				}
 			}
 			if s[i] == toFind[ind] {
