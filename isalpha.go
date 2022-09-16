@@ -6,7 +6,11 @@ func IsAlpha(s string) bool {
 		if (s[i] < 'A' || s[i] > 'Z') && (s[i] < '0' || s[i] > '9') && (s[i] < 'a' || s[i] > 'z') {
 			w = false
 		} else {
-			w = true
+			if w == false {
+				return w
+			} else {
+				w = true
+			}
 		}
 	}
 	return w
