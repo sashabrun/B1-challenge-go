@@ -15,8 +15,12 @@ func main() {
 			}
 		}
 	}
-	for _, nom := range cassecouille {
-		print(nom)
-		z01.PrintRune('\n')
+	if len(cassecouille) > 0 {
+		for _, cassecouille := range os.Args[1:] {
+			for i := 0; i < len(cassecouille); i++ {
+				z01.PrintRune(rune(cassecouille[i]))
+			}
+			z01.PrintRune('\n')
+		}
 	}
 }
