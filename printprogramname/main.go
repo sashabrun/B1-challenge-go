@@ -11,4 +11,5 @@ func main() {
 	for i := 0; i < len(titredefdp); i++ {
 		z01.PrintRune(rune(titredefdp[i]))
 	}
+	z01.PrintRune('\n')
 }
