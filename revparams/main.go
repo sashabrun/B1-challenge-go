@@ -8,9 +8,9 @@ import (
 
 func main() {
 	if len(os.Args) > 0 {
-		for i := len(os.Args[1:]) - 1; i >= 0; i-- {
-			for _, char := range os.Args[1:] {
-				z01.PrintRune(rune(char[i]))
+		for i := len(os.Args) - 1; i >= 1; i-- {
+			for _, char := range os.Args[i] {
+				z01.PrintRune(rune(char))
 			}
 			z01.PrintRune('\n')
 		}
