@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 )
 
@@ -17,7 +16,7 @@ func main() {
 			}
 		}
 		if !b {
-			fmt.Println(cassecouille[i])
+			print(cassecouille[i])
 		}
 	}
 }
