@@ -1,9 +1,12 @@
 package main
 
-import "os"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	cassecouille := []rune(os.Args[0])[2:]
+	cassecouille := os.Args[1:]
 	n := len(cassecouille)
 	b := false
 	for i := n - 1; i > 0; i-- {
@@ -14,7 +17,7 @@ func main() {
 			}
 		}
 		if !b {
-			return
+			fmt.Println(cassecouille[i])
 		}
 	}
 }
