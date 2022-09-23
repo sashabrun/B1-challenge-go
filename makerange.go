@@ -7,7 +7,7 @@ func MakeRange(min, max int) []int {
 	}
 	liste2 := make([]int, max-min)
 	valeur := min
-	for i := min; i < max; i++ {
+	for i := 0; i < max-min; i++ {
 		liste2[i] = valeur
 		valeur++
 	}
