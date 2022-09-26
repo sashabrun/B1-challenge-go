@@ -12,5 +12,11 @@ func SplitWhiteSpaces(s string) []string {
 		}
 	}
 	liste = append(liste, element)
-	return liste
+	var liste2 []string
+	for i := 0; i < len(liste); i++ {
+		if liste[i] != "" {
+			liste2 = append(liste2, liste[i])
+		}
+	}
+	return liste2
 }
