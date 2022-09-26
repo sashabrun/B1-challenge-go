@@ -11,6 +11,7 @@ func Split(s, sep string) []string {
 			for j := 1; j < len(sep); j++ {
 				if s[x+j] != sep[j] {
 					element += string(s[i])
+					break
 				} else if j == len(sep)-1 {
 					trouv = true
 					i++
