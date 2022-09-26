@@ -1,4 +1,4 @@
-package piscine
+package main
 
 import (
 	"os"
@@ -14,16 +14,8 @@ func printStr(s string) {
 }
 
 func isEven(nbr int) bool {
-	even := 0
-	odd := 0
-	for x := 1; x <= nbr; x++ {
-		if x%2 == 0 {
-			even = even + x
-		} else {
-			odd = odd + x
-		}
-	}
-	if isEven(nbr) {
+
+	if nbr%2 == 0 {
 		return true
 	} else {
 		return false
