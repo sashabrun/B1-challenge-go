@@ -4,19 +4,6 @@ import (
 	"github.com/01-edu/z01"
 )
 
-//type point struct {
-//x := 42
-//	y := 21
-//}
-
-//func main() {
-//points := point{}
-
-//	points.x = x
-//	points.y = y
-
-//		fmt.Printf("points.x, points.y")
-//	}
 type point struct {
 	x rune
 	y rune
