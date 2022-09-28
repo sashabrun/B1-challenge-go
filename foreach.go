@@ -1,7 +1,7 @@
 package piscine
 
 func ForEach(f func(int), a []int) {
-	for element := range a {
-		f(element + 1)
+	for i := 0; i < len(a); i++ {
+		f(a[i])
 	}
 }
